@@ -1,0 +1,28 @@
+_metadata:
+  major_version: 1
+  minor_version: 1
+display_information:
+  name: <BOT_NAME>
+features:
+  bot_user:
+    display_name: <BOT_NAME>
+    always_online: false
+  slash_commands:
+    - command: /<BOT_NAME>-get-status
+      description: Gets the status of <BOT_NAME>
+      should_escape: false
+    - command: /<BOT_NAME>-hello
+      description: Say hello to <BOT_NAME>!
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - incoming-webhook
+      - files:write
+      - commands
+settings:
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
