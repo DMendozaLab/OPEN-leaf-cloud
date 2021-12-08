@@ -1,6 +1,6 @@
 # CyVerse
 
-### Files requiring editing
+## Files requiring editing
 - secrets.py
 - run_cyverse.bat
 
