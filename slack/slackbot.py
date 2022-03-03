@@ -58,6 +58,7 @@ def main():
 
     # Else we don't send as many details
     elif(htp.get_dormant_count() < secrets.max_dormant_msgs):
+        htp.set_dormant_count(htp.get_dormant_count()+1)
         message = 'Status : Dormant\n'
         # Send slack message and check it was successfull
         response = webhook.send(text=message)
